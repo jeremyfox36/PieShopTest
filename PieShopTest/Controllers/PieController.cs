@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using PieShopTest.Models;
 using PieShopTest.ViewModels;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace PieShopTest.Controllers
 {
@@ -28,6 +27,14 @@ namespace PieShopTest.Controllers
             piesListViewModel.Pies = _pieRepository.AllPies;
             piesListViewModel.CurrentCategory = "Cheese cakes";
             return View(piesListViewModel);
+        }
+
+        public IActionResult Details(int id)
+        {
+            var pie = _pieRepository.GetPieById(id);
+            if (pie == null)
+                return NotFound();
+            return View(pie);
         }
     }
 }
