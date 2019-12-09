@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using PieShopTest.Models;
 
 namespace PieShopTest.Components
 {
