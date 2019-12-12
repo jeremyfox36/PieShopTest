@@ -38,7 +38,6 @@ namespace PieShopTest
             {
                 app.UseDeveloperExceptionPage();
 
-
             }
 
             app.UseHttpsRedirection();
