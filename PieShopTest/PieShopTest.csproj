@@ -24,7 +24,4 @@
     <Content Remove="wwwroot\lib\jquery\jquery.slim.js" />
     <Content Remove="wwwroot\lib\jquery\jquery.slim.min.js" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Components\" />
-  </ItemGroup>
 </Project>
